@@ -5,7 +5,8 @@ import time
 
 import julia
 julia.install()
-jl = julia.Julia(compiled_modules=False)
+#jl = julia.Julia(compiled_modules=False)
+jl = julia.Julia()
 ju_fibonacci = jl.eval('include("ju_fibo.jl")')
 
 import pyximport
